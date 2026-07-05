@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://1teksolution.github.io/oneteksolution-v2026/sitemap.xml
