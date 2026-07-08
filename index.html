@@ -56,33 +56,94 @@
       width: min(92%, var(--max-width));
       margin: 0 auto;
     }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>One Tek Solution</title>
+  <meta
+    name="description"
+    content="One Tek Solution - Manufacturing, Trading, Automation, Fire Safety, R&D, and industrial technology solutions."
+  />
+  <style>
+    :root {
+      --primary: #1f66ff;
+      --primary-dark: #0f4fd6;
+      --accent: #25d7ff;
+      --bg-dark: #081426;
+      --bg-dark-2: #0d2238;
+      --text-dark: #0f172a;
+      --text-light: #f8fafc;
+      --muted: #64748b;
+      --surface: #ffffff;
+      --surface-soft: #f4f8fc;
+      --border: #dbe4ee;
+      --shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+      --radius: 24px;
+      --max-width: 1200px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--surface-soft);
+      color: var(--text-dark);
+      line-height: 1.6;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(92%, var(--max-width));
+      margin: 0 auto;
+    }
 
     header {
-      background: var(--white);
       position: sticky;
       top: 0;
       z-index: 1000;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+      background: #ffffff;
+      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.06);
     }
 
     .navbar {
+      min-height: 84px;
       display: flex;
-      justify-content: space-between;
       align-items: center;
-      padding: 22px 0;
+      justify-content: space-between;
       gap: 20px;
+      padding: 18px 0;
     }
 
     .logo {
-      font-size: 1.7rem;
+      font-size: 1.75rem;
       font-weight: 800;
       color: var(--text-dark);
+      letter-spacing: 0.2px;
     }
 
     .nav-links {
       display: flex;
-      gap: 28px;
       align-items: center;
+      gap: 26px;
       flex-wrap: wrap;
     }
 
@@ -103,9 +164,9 @@
       padding: 14px 28px;
       border-radius: 999px;
       background: var(--primary);
-      color: var(--white);
+      color: #ffffff;
       font-weight: 700;
-      transition: 0.2s ease;
+      transition: background 0.2s ease, transform 0.2s ease;
     }
 
     .btn:hover {
@@ -114,15 +175,14 @@
     }
 
     .hero {
-      background: linear-gradient(90deg, #081426 0%, #0b1b31 55%, #10273c 100%);
+      background: linear-gradient(90deg, var(--bg-dark) 0%, #0c1b31 55%, var(--bg-dark-2) 100%);
       color: var(--text-light);
       padding: 80px 0;
-      overflow: hidden;
     }
 
     .hero-grid {
       display: grid;
-      grid-template-columns: 1.1fr 0.9fr;
+      grid-template-columns: 1.08fr 0.92fr;
       gap: 48px;
       align-items: center;
     }
@@ -132,8 +192,8 @@
       font-size: 0.95rem;
       font-weight: 700;
       letter-spacing: 2px;
-      margin-bottom: 22px;
       text-transform: uppercase;
+      margin-bottom: 22px;
     }
 
     .hero h1 {
@@ -141,18 +201,18 @@
       line-height: 1.05;
       font-weight: 800;
       margin-bottom: 24px;
-      max-width: 620px;
+      max-width: 650px;
     }
 
     .hero p {
-      font-size: 1.2rem;
-      color: #d9e5f3;
+      font-size: 1.12rem;
+      color: #d9e6f4;
       max-width: 720px;
       margin-bottom: 30px;
     }
 
     .hero-card {
-      background: var(--white);
+      background: #ffffff;
       color: var(--text-dark);
       border-radius: 28px;
       overflow: hidden;
@@ -160,7 +220,6 @@
       min-height: 560px;
       display: flex;
       flex-direction: column;
-      justify-content: flex-start;
     }
 
     .hero-image {
@@ -183,8 +242,8 @@
 
     .hero-card-content p {
       color: #334155;
-      font-size: 1.05rem;
       margin: 0;
+      font-size: 1.04rem;
     }
 
     section {
@@ -198,7 +257,7 @@
 
     .section-header h2 {
       font-size: 2.4rem;
-      margin-bottom: 14px;
+      margin-bottom: 12px;
       color: var(--text-dark);
     }
 
@@ -209,62 +268,35 @@
       font-size: 1.05rem;
     }
 
-    .services-grid,
-    .products-grid,
-    .gallery-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 24px;
-    }
-
-    .card {
-      background: var(--white);
-      border-radius: 20px;
-      padding: 28px;
-      box-shadow: 0 10px 25px rgba(15, 23, 42, 0.06);
-      border: 1px solid var(--border);
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-
-    .card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 14px 28px rgba(15, 23, 42, 0.1);
-    }
-
-    .card h3 {
-      font-size: 1.35rem;
-      margin-bottom: 12px;
-      color: #0f172a;
-    }
-
-    .card p {
-      color: var(--muted);
-      font-size: 1rem;
-    }
-
     .about-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 40px;
-      align-items: center;
+      gap: 32px;
+      align-items: stretch;
+    }
+
+    .about-box,
+    .card,
+    .contact-box,
+    form {
+      background: #ffffff;
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      box-shadow: 0 10px 24px rgba(15, 23, 42, 0.06);
     }
 
     .about-box {
-      background: var(--white);
-      border-radius: 24px;
       padding: 32px;
-      border: 1px solid var(--border);
-      box-shadow: 0 10px 25px rgba(15, 23, 42, 0.06);
     }
 
     .about-box h2 {
-      font-size: 2.2rem;
+      font-size: 2rem;
       margin-bottom: 18px;
     }
 
     .about-box p {
       color: var(--muted);
-      margin-bottom: 16px;
+      margin-bottom: 14px;
     }
 
     .stats {
@@ -283,28 +315,56 @@
     }
 
     .stat h3 {
-      color: var(--primary);
       font-size: 1.8rem;
       margin-bottom: 6px;
+      color: var(--primary);
     }
 
     .stat p {
-      color: var(--muted);
       margin: 0;
+      color: var(--muted);
+    }
+
+    .services-grid,
+    .products-grid,
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .card {
+      padding: 28px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 14px 28px rgba(15, 23, 42, 0.1);
+    }
+
+    .card h3 {
+      font-size: 1.35rem;
+      margin-bottom: 12px;
+      color: #0f172a;
+    }
+
+    .card p {
+      color: var(--muted);
     }
 
     .catalogue-table-wrap {
       overflow-x: auto;
-      background: var(--white);
-      border-radius: 20px;
-      box-shadow: 0 10px 25px rgba(15, 23, 42, 0.06);
+      background: #ffffff;
       border: 1px solid var(--border);
+      border-radius: 24px;
+      box-shadow: 0 10px 24px rgba(15, 23, 42, 0.06);
     }
 
     table {
       width: 100%;
+      min-width: 720px;
       border-collapse: collapse;
-      min-width: 700px;
     }
 
     th,
@@ -325,21 +385,22 @@
     }
 
     .gallery-item {
-      background: var(--white);
+      background: #ffffff;
+      border: 1px solid var(--border);
       border-radius: 20px;
       overflow: hidden;
-      border: 1px solid var(--border);
-      box-shadow: 0 10px 25px rgba(15, 23, 42, 0.06);
+      box-shadow: 0 10px 24px rgba(15, 23, 42, 0.06);
     }
 
     .gallery-item img {
       width: 100%;
       height: 240px;
       object-fit: cover;
+      display: block;
       background: #e2e8f0;
     }
 
-    .gallery-item .caption {
+    .caption {
       padding: 18px;
       font-weight: 600;
       color: #1e293b;
@@ -353,11 +414,7 @@
 
     .contact-box,
     form {
-      background: var(--white);
-      border-radius: 24px;
       padding: 30px;
-      box-shadow: 0 10px 25px rgba(15, 23, 42, 0.06);
-      border: 1px solid var(--border);
     }
 
     .contact-box h3,
@@ -395,7 +452,7 @@
     input:focus,
     textarea:focus {
       border-color: var(--primary);
-      box-shadow: 0 0 0 3px rgba(31, 107, 255, 0.12);
+      box-shadow: 0 0 0 3px rgba(31, 102, 255, 0.12);
     }
 
     textarea {
@@ -403,20 +460,21 @@
       resize: vertical;
     }
 
+    .submit-btn {
+      border: none;
+      cursor: pointer;
+    }
+
     footer {
       background: #07101f;
       color: #cbd5e1;
-      padding: 28px 0;
       text-align: center;
-    }
-
-    footer p {
-      margin: 0;
+      padding: 28px 0;
     }
 
     @media (max-width: 1024px) {
       .hero h1 {
-        font-size: 3.2rem;
+        font-size: 3.1rem;
       }
 
       .hero-grid,
@@ -448,16 +506,16 @@
       }
 
       .hero h1 {
-        font-size: 2.5rem;
+        font-size: 2.4rem;
       }
 
       .hero p {
-        font-size: 1.05rem;
+        font-size: 1.02rem;
       }
 
       .section-header h2,
       .about-box h2 {
-        font-size: 1.9rem;
+        font-size: 1.85rem;
       }
 
       .btn {
@@ -471,6 +529,7 @@
   <header>
     <div class="container navbar">
       <div class="logo">One Tek Solution</div>
+
       <nav class="nav-links">
         <a href="#home" class="active">Home</a>
         <a href="#about">About</a>
@@ -480,6 +539,7 @@
         <a href="#gallery">Gallery</a>
         <a href="#contact">Contact</a>
       </nav>
+
       <a href="#contact" class="btn">Request RFQ</a>
     </div>
   </header>
@@ -489,18 +549,22 @@
       <div class="container hero-grid">
         <div>
           <div class="eyebrow">Manufacturing | Trading | Automation | Fire Safety | R&amp;D</div>
+
           <h1>Industrial technology and safety solutions built for performance</h1>
+
           <p>
             One Tek Solution delivers manufacturing support, semiconductor trading,
             customized system delivery, automation, embedded software, web development,
             R&amp;D support, battery chargers, stabilizers, power supplies, flasher
             products, fire alarm systems, and industrial electronic solutions.
           </p>
+
           <a href="#contact" class="btn">Get in Touch</a>
         </div>
 
         <div class="hero-card">
-          <img src="./images/office.jpg" alt="One Tek Solution office" class="hero-image" />
+          <img src="./office.jpg" alt="One Tek Solution office" class="hero-image" />
+
           <div class="hero-card-content">
             <h3>One Tek Solution</h3>
             <p>
@@ -516,11 +580,13 @@
       <div class="container about-grid">
         <div class="about-box">
           <h2>About One Tek Solution</h2>
+
           <p>
             One Tek Solution works across industrial supply, automation, safety,
             development support, and engineering services. We focus on practical
             execution, reliable delivery, and long-term customer value.
           </p>
+
           <p>
             Our goal is to support industries with the right mix of technical
             capability, product access, and solution-driven service.
@@ -531,10 +597,12 @@
               <h3>5+</h3>
               <p>Core service areas</p>
             </div>
+
             <div class="stat">
               <h3>100%</h3>
               <p>Customer-focused support</p>
             </div>
+
             <div class="stat">
               <h3>24/7</h3>
               <p>Response mindset</p>
@@ -544,14 +612,17 @@
 
         <div class="about-box">
           <h2>Why Choose Us</h2>
+
           <p>
             We combine industrial understanding, technical support, sourcing
             capability, and custom solution development in one place.
           </p>
+
           <p>
             From electronics and safety products to automation and digital
             services, we help businesses move faster with dependable execution.
           </p>
+
           <p>
             We are committed to quality, clarity, and responsive communication
             through every stage of the project or supply requirement.
@@ -746,24 +817,23 @@
         <div class="section-header">
           <h2>Gallery</h2>
           <p>
-            Replace these placeholders with your actual project, product, office,
-            installation, or team images.
+            A quick look at our office, project environment, and support setup.
           </p>
         </div>
 
         <div class="gallery-grid">
           <div class="gallery-item">
-            <img src="./images/gallery-1.jpg" alt="Industrial project" />
+            <img src="./1-tek cabin.png" alt="Industrial project" />
             <div class="caption">Industrial Project</div>
           </div>
 
           <div class="gallery-item">
-            <img src="./images/gallery-2.jpg" alt="Automation system" />
+            <img src="./1-tek office.png" alt="Automation system" />
             <div class="caption">Automation System</div>
           </div>
 
           <div class="gallery-item">
-            <img src="./images/gallery-3.jpg" alt="Technical support work" />
+            <img src="./Reception.png" alt="Technical support work" />
             <div class="caption">Technical Support</div>
           </div>
         </div>
@@ -784,9 +854,8 @@
           <div class="contact-box">
             <h3>Business Contact</h3>
             <p><strong>Company:</strong> One Tek Solution</p>
-            <p><strong>Email:</strong> info@oneteksolution.in</p>
-            <p><strong>Phone:</strong> +91 9717753193</p>
-            <p><strong>Whatsapp:</strong> +91 8505807245</p>
+            <p><strong>Email:</strong> info@oneteksolution.com</p>
+            <p><strong>Phone:</strong> +91 00000 00000</p>
             <p><strong>Location:</strong> India</p>
             <p>
               For product enquiries, industrial support, trading requests,
@@ -818,7 +887,7 @@
               <textarea id="message" name="message" placeholder="Write your requirement here"></textarea>
             </div>
 
-            <button type="submit" class="btn" style="border: none; cursor: pointer;">Submit Request</button>
+            <button type="submit" class="btn submit-btn">Submit Request</button>
           </form>
         </div>
       </div>
