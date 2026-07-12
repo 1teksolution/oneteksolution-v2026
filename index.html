@@ -618,111 +618,32 @@
       </div>
     </section>
 
-    <section id="products">
-      <div class="container">
-        <div class="section-header">
-          <h2>Our Products</h2>
-          <p>
-            A selection of industrial, technical, and business support product categories.
-          </p>
-        </div>
+   .product-item {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--card-shadow);
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
 
-         
+.product-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 30px rgba(16, 32, 51, 0.12);
+}
 
-        <div class="products-grid">
-          <div class="product-item">
-            <img src="./Battery Charger.png" alt="Battery Charger" />
-            <div class="caption">Battery Charger</div>
-          </div> 
+.product-item img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  background: #dbe7f3;
+}
 
-          <div class="products-grid">
-          <div class="product-item">
-            <img src="./Fast Battery Charger.png" alt="Fast Battery Chargers" />
-            <div class="caption">Fast Battery Charger</div>
-          </div>
-
-          <div class="products-item">
-            <img src="./Stabilizer for AC.png" alt="Stabilizer for AC" />
-            <div class="caption">Stabilizer for AC</div>
-          </div>
-            
-          <div class="products-item">
-            <img src="./Variable Power Supply.png" alt="Variable Power Supply" />
-            <div class="caption">Variable Power Supply</div>
-          </div>
-
-            <div class="products-item">
-            <img src="./SMPS 12V-5A.png" alt="SMPS 12V-5A" />
-            <div class="caption">SMPS 12V-5A</div>
-          </div>
-
-            <div class="products-item">
-            <img src="./SMPS 12V-10A.png" alt="SMPS 12V-10A" />
-            <div class="caption">SMPS 12V-10A</div>
-          </div>
-
-            <div class="products-item">
-            <img src="./SMPS 12V-3.5A.png" alt="SMPS 12V-3.5A" />
-            <div class="caption">SMPS 12V-3.5A</div>
-          </div>
-
-            <div class="products-item">
-            <img src="./SMPS 24V-3.5A.png" alt="SMPS 24V-3.5A" />
-            <div class="caption">SMPS 24V-3.5A</div>
-          </div>
-
-            <div class="products-item">
-            <img src="./DC-DC Converter.png" alt="DC-DC Converter" />
-            <div class="caption">DC-DC Converter</div>
-          </div>
-
-            <div class="products-item">
-            <img src="./Buzzer for tractor.png" alt="Buzzer for tractor" />
-            <div class="caption">Buzzer for tractor</div>
-          </div>
-
-
-             <div class="products-item">
-            <img src="./Antitheft System for Indian Railways.png" alt="Antitheft System for Indian Railways" />
-            <div class="caption">Antitheft System for Indian Railways</div>
-          </div>
-
-
-            <div class="products-item">
-            <img src="./Bus fire safty Device.png" alt="Bus fire safty Device" />
-            <div class="caption">Bus fire safty Device</div>
-          </div>
-
-            <div class="products-item">
-            <img src="./Fire Alarm Control Panel.png" alt="Fire Alarm Control Panel" />
-            <div class="caption">Fire Alarm Control Panel</div>
-          </div>
-
-            <div class="products-item">
-            <img src="./Fire Alarm System 8-Zone.png" alt="Fire Alarm System 8-Zone" />
-            <div class="caption">Fire Alarm System 8-Zone</div>
-          </div>
-
-        
-          
-          <div class="products-item">
-            <img src="./Fire Alarm System 4-Zone.png" alt="Fire Alarm System 4-Zone" />
-            <div class="caption">Fire Alarm System 4-Zone</div>
-          </div>
-
-
-            <div class="products-item">
-            <img src="./Flasher Products.png" alt="Flasher Products" />
-            <div class="caption">Flasher Products</div>
-          </div>
-
-          <div class="products-item">
-            <img src="./Industrial Electronics.png" alt="Industrial Electronics" />
-            <div class="caption">Industrial Electronics</div>
-          </div>
-        </div>
-      </div>
-    </section>
+.product-item .caption {
+  padding: 16px 18px;
+  font-weight: 600;
+  color: var(--dark);
+}
 
     <section id="catalogue">
       <div class="container">
